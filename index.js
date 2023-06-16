@@ -22,10 +22,6 @@ function codigosPoastales(codigoPostal) {
                 let total2 = precio + leloir;
                 console.log("Precio total del producto: " + total2);
                 break;
-
-            default:
-                // let codigoPostal = Number(prompt("ingrese un codigo postal (1714 , 1712 , 1715)"));
-                break;
         }
         codigoPostal = Number(prompt("ingrese un codigo postal (1714 , 1712 , 1715)"));
     }                
