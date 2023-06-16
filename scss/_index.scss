@@ -1,0 +1,100 @@
+
+.header__tienda {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 99;
+    @include logo;
+	nav {
+		ul {
+			display: flex;
+			list-style: none;
+			font-family: $font-family_2;
+			font-size: 20px;
+			li {
+				padding: 0px 30px;
+				margin: 10px 40px;
+				color: $color_1;
+				a {
+					color: $color_4;
+					text-decoration: none;
+				}
+				ul {
+					position: absolute;
+					display: none;
+					background-color: $background-color_4;
+					padding: 5px 10px;
+					border-radius: 4px;
+					z-index: 3;
+					li {
+						display: block;
+					}
+				}
+				&:hover {
+					ul {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+    .shop-now{
+        border: 4px solid white;
+        padding: 10px;
+        margin-top: 250px;
+        a{
+            font-family: $font-btn;
+            color: white;
+            padding: 10px; 
+            font-weight: 605;
+        }&:hover{
+            border: 4px solid orange;
+            padding: 10px;
+            margin-top: 250px;
+            a{
+                font-family: $font-btn;
+                color: orange;
+                padding: 10px; 
+                font-weight: 605;
+            }
+        }
+
+    }
+	video {
+		position: absolute;
+		width: 100%;
+		height: 80%;
+		object-fit: cover;
+		z-index: -2;
+		
+	}
+	
+	
+}
+.tienda-tittle{
+	margin-top: 350px;
+	height: auto;
+	@include flex-center;
+	h5{
+		color: rgb(72, 72, 72);
+		font-weight: 650;
+		$font-btn:'barlow';
+		font-size: clamp(2rem , 4vw, 6rem);
+		
+	}
+}
+.offers{
+	margin: 80px 10px;
+	border: 1px solid grey;
+	width: 400px;
+	a .text{
+		p{
+			color: black;
+			margin-left: 20px;
+			$font-btn:'barlow';
+			font-weight: 500px;
+		}
+	}
+
+}
+

@@ -1,0 +1,49 @@
+//FOOTER 
+
+
+.fondo__footer{
+    background-color: black;
+    height: auto;
+    .footer__ubicacion{
+        display: flex;
+        justify-content: space-between;
+        .footer__logo{
+            margin: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .logo__footer{
+                height: 100px;
+            }
+        }
+        .footer__iconos{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            font-size: xx-large;
+            display: flex;
+            a{
+                color: white;
+            }
+        }
+        .footer__texto{
+            display: flex;
+            font-family: "barlow";
+            font-size:15px ;
+            color: white;
+            div{
+                margin: 30px 100px;
+                h4{
+                    font-weight: 650;
+                }
+                ul{
+                    margin-top: 10px;
+                    li{
+                        margin-top: 5px;
+                    } 
+                }
+            }
+            
+        }
+    }
+}
