@@ -48,7 +48,7 @@ function calculadorDePrecio(ubicacion, resultado) {
 
 //ALGORITMO
 
-// let producto = prompt('ingrese un nombre del producto :');
+let producto = prompt('ingrese un nombre del producto :');
 const resultado = productos.find((el) => el.nombre === producto)
 const verdad = productos.some((el) => el.nombre === producto)
     if (verdad == true && resultado.precio > 0) {
@@ -63,6 +63,5 @@ const verdad = productos.some((el) => el.nombre === producto)
         }
     }
 else{
-    console.log('No se ingreso ningun producto')
+    console.log('No se ingreso ningun producto')
 }
-
