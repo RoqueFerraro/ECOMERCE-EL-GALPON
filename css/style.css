@@ -10,6 +10,20 @@ a {
   text-decoration: none;
 }
 
+.icon-cart {
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+
+.icon-cart:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header__tienda {
   display: flex;
   flex-direction: column;
@@ -19,7 +33,7 @@ a {
 .header__tienda .header-logo {
   margin: 50px;
   font-size: clamp(1rem, 4vw, 2.5rem);
-  color: white;
+  color: black;
   font-family: "black ops one";
 }
 .header__tienda .header-logo span {
@@ -37,7 +51,7 @@ a {
   color: white;
 }
 .header__tienda nav ul li a {
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
 }
 .header__tienda nav ul li ul {
@@ -76,80 +90,151 @@ a {
   padding: 10px;
   font-weight: 605;
 }
-.header__tienda video {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -2;
-}
 
 .tienda-tittle {
-  margin-top: 350px;
   height: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 100PX;
 }
 .tienda-tittle h5 {
-  color: rgb(72, 72, 72);
+  color: black;
   font-weight: 650;
   font-size: clamp(2rem, 4vw, 6rem);
 }
 
-.offers {
-  margin: 80px 10px;
-  border: 1px solid grey;
-  width: 400px;
-}
-.offers a .text p {
-  color: black;
-  margin-left: 20px;
-  font-weight: 500px;
+body {
+  margin: 0px;
 }
 
-.fondo__footer {
-  background-color: black;
-  height: auto;
+/*navbar*/
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
 }
-.fondo__footer .footer__ubicacion {
+
+.navbar {
   display: flex;
   justify-content: space-between;
+  height: 12vh;
 }
-.fondo__footer .footer__ubicacion .footer__logo {
-  margin: 10px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 4vh;
+  cursor: pointer;
 }
-.fondo__footer .footer__ubicacion .footer__logo .logo__footer {
-  height: 100px;
+
+.ver-carrito {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
 }
-.fondo__footer .footer__ubicacion .footer__iconos {
+
+/*product cards*/
+.shop-content {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
-  font-size: xx-large;
-  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
-.fondo__footer .footer__ubicacion .footer__iconos a {
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+
+.card > img {
+  width: 90%;
+  height: 250px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
   color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
-.fondo__footer .footer__ubicacion .footer__texto {
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*modal content*/
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #121212;
   display: flex;
-  font-family: "barlow";
-  font-size: 15px;
-  color: white;
+  flex-direction: column;
+  align-items: center;
+  /*for the top*/
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
 }
-.fondo__footer .footer__ubicacion .footer__texto div {
-  margin: 30px 100px;
+
+.modal-container::-webkit-scrollbar {
+  display: none;
 }
-.fondo__footer .footer__ubicacion .footer__texto div h4 {
-  font-weight: 650;
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #fff;
+  width: 100%;
 }
-.fondo__footer .footer__ubicacion .footer__texto div ul {
-  margin-top: 10px;
+
+.modal-header-title {
+  justify-self: start;
 }
-.fondo__footer .footer__ubicacion .footer__texto div ul li {
-  margin-top: 5px;
+
+.modal-header-button {
+  cursor: pointer;
+}
+
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+
+.modal-container > div > img {
+  height: 120px;
+  width: 120px;
+}
+
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
 }/*# sourceMappingURL=style.css.map */
